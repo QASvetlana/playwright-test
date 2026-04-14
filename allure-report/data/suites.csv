@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5990","Переключение на П-образную столешницу","","2026-04-14","passed","2026-04-14","UI тесты на b2b решение topklik","tests/topklik.spec.js","",""
+"","6635","Успешная авторизация","","2026-04-14","passed","2026-04-14","UI тесты на b2b решение topklik","tests/topklik.spec.js","",""
+"","5860","Переключатель ""Скрыть столешницу"" работает","","2026-04-14","passed","2026-04-14","UI тесты на b2b решение topklik","tests/topklik.spec.js","",""
+"","16230","Собрать заказ","","2026-04-14","passed","2026-04-14","UI тесты на b2b решение topklik","tests/topklik.spec.js","",""
