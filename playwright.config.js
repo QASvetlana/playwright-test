@@ -14,7 +14,7 @@ export default defineConfig({
   ],
   
   use: {
-    headless: true,   // В CI headless режим
+    headless: true,   
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
