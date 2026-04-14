@@ -28,14 +28,16 @@ export default defineConfig({
     ['allure-playwright', { outputFolder: 'allure-results' }] 
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
-  use: {
-    /* Base URL to use in actions like `await page.goto('')`. */
-    // baseURL: 'http://localhost:3000',
-
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+use: {
     trace: 'on-first-retry',
+    headless: true,  // или !!process.env.CI
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
+    // Убрать slowMo в CI
+    launchOptions: {
+      slowMo: process.env.CI ? 0 : 300,
+    }
   },
-
   /* Configure projects for major browsers */
   projects: [
     {
