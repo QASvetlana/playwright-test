@@ -25,3 +25,5 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+        - name: Check config
+  run: cat playwright.config.js | grep -A 10 "use:"
