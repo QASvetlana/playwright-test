@@ -29,15 +29,14 @@ export default defineConfig({
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
 use: {
-    trace: 'on-first-retry',
-    headless: true,  // или !!process.env.CI
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
-    // Убрать slowMo в CI
-    launchOptions: {
-      slowMo: process.env.CI ? 0 : 300,
-    }
-  },
+  headless: true,   
+  trace: 'on-first-retry',
+  screenshot: 'only-on-failure',
+  video: 'retain-on-failure',
+  launchOptions: {
+    slowMo: 0, 
+  }
+},
   /* Configure projects for major browsers */
   projects: [
     {
