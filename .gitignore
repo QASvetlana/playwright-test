@@ -6,3 +6,7 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Allure: результаты и отчёт генерируются, в репозиторий не коммитятся
+allure-results/
+allure-report/
